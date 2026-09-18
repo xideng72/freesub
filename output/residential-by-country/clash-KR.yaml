@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: 104.16.10.185
-  port: 443
+  server: 172.64.53.60
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   type: vless
-  server: 104.16.10.185
-  port: 443
+  server: 172.64.53.42
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   type: vless
   server: 104.16.10.185
@@ -48,18 +48,18 @@ proxies:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   type: vless
-  server: 188.114.97.6
+  server: 104.16.10.185
   port: 443
-  uuid: 0ed342c3-eb45-4d63-83a1-697252636ca9
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: yellow-hall-d482.260-d22.workers.dev
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /?ed=2560
     headers:
-      Host: yellow-hall-d482.260-d22.workers.dev
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select

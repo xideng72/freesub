@@ -13,18 +13,18 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 104.24.30.89
+  server: 104.17.247.68
   port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: khoda.ak-khoda.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /sync
     headers:
-      Host: rayan-007.nastaran.dpdns.org
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
