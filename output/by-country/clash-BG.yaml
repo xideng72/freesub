@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 23.227.39.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime17.workers.dev
-- name: 🇧🇬 BG 02 - xiaohe
-  type: vless
   server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
@@ -26,7 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 03 - xiaohe
+- name: 🇧🇬 BG 02 - xiaohe
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -42,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 BG 01 - xiaohe
   - 🇧🇬 BG 02 - xiaohe
-  - 🇧🇬 BG 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 BG 01 - xiaohe
   - 🇧🇬 BG 02 - xiaohe
-  - 🇧🇬 BG 03 - xiaohe
 rules:
 - MATCH,PROXIES
