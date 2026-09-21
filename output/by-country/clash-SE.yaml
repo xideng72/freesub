@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
-  type: vless
-  server: 143.246.195.98
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  type: ss
+  server: 51.170.185.165
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.195.98
 proxy-groups:
 - name: PROXIES
   type: select
