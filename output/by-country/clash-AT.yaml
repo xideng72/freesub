@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 AT 01 - xiaohe
+- name: 🇦🇹 AT 01 - xwt
   type: vless
   server: 152.53.1.40
   port: 443
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 AT 01 - xiaohe
+  - 🇦🇹 AT 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 AT 01 - xiaohe
+  - 🇦🇹 AT 01 - xwt
 rules:
 - MATCH,PROXIES

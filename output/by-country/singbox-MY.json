@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - xiaohe",
-        "🇲🇾 MY 02 - xiaohe"
+        "🇲🇾 MY 01 - xwt",
+        "🇲🇾 MY 02 - xwt",
+        "🇲🇾 MY 03 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - xiaohe",
-        "🇲🇾 MY 02 - xiaohe"
+        "🇲🇾 MY 01 - xwt",
+        "🇲🇾 MY 02 - xwt",
+        "🇲🇾 MY 03 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },

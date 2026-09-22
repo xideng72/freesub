@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 HU 01 - xiaohe",
-        "🇭🇺 HU 02 - xiaohe"
+        "🇭🇺 HU 01 - xwt",
+        "🇭🇺 HU 02 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 HU 01 - xiaohe",
-        "🇭🇺 HU 02 - xiaohe"
+        "🇭🇺 HU 01 - xwt",
+        "🇭🇺 HU 02 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },

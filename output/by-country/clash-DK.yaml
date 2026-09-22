@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 DK 01 - xiaohe
+- name: 🇩🇰 DK 01 - xwt
   type: vless
   server: 193.180.208.169
   port: 8443
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 DK 01 - xiaohe
+  - 🇩🇰 DK 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 DK 01 - xiaohe
+  - 🇩🇰 DK 01 - xwt
 rules:
 - MATCH,PROXIES

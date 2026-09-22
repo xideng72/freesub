@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇰 SK 01 - xiaohe
+- name: 🇸🇰 SK 01 - xwt
   type: vless
   server: 89.46.42.141
   port: 2053
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇰 SK 01 - xiaohe
+  - 🇸🇰 SK 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇰 SK 01 - xiaohe
+  - 🇸🇰 SK 01 - xwt
 rules:
 - MATCH,PROXIES

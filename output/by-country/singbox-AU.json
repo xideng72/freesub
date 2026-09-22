@@ -6,28 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 07 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 08 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 02 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 03 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 04 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 05 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 06 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 07 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 08 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 07 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 08 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 02 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 03 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 04 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 05 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 06 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 07 - xwt",
+        "🇦🇺 澳大利亚 (Australia) 08 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },
