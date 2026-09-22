@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇺🇿 UZ 01 - xwt
   type: vless
-  server: 172.67.210.146
+  server: 104.25.155.45
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
   udp: true
@@ -20,7 +20,35 @@ proxies:
       Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 - name: 🇺🇿 UZ 02 - xwt
   type: vless
-  server: 104.25.155.45
+  server: 104.24.143.217
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
+    headers:
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+- name: 🇺🇿 UZ 03 - xwt
+  type: vless
+  server: 104.18.80.149
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    headers:
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+- name: 🇺🇿 UZ 04 - xwt
+  type: vless
+  server: 172.67.210.146
   port: 443
   uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
   udp: true
@@ -39,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇺🇿 UZ 01 - xwt
   - 🇺🇿 UZ 02 - xwt
+  - 🇺🇿 UZ 03 - xwt
+  - 🇺🇿 UZ 04 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇺🇿 UZ 01 - xwt
   - 🇺🇿 UZ 02 - xwt
+  - 🇺🇿 UZ 03 - xwt
+  - 🇺🇿 UZ 04 - xwt
 rules:
 - MATCH,PROXIES

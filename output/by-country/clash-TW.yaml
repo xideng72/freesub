@@ -28,12 +28,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
+      Host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xwt
   type: vmess
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
@@ -63,7 +63,7 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.78
+      Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xwt
   type: vmess
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
@@ -74,13 +74,29 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - xwt
+  type: vmess
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xwt
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - xwt
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -101,6 +117,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 04 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 05 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 06 - xwt
+  - 🇹🇼 中国台湾 (Taiwan) 07 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,5 +129,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 04 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 05 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 06 - xwt
+  - 🇹🇼 中国台湾 (Taiwan) 07 - xwt
 rules:
 - MATCH,PROXIES
