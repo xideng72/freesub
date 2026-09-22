@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xwt
+- name: 🇮🇸 IS 01 - xwt
   type: vless
-  server: 146.75.84.3
+  server: 151.243.181.99
   port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: BechBad.global.ssl.fastly.net
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xwt
+  - 🇮🇸 IS 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xwt
+  - 🇮🇸 IS 01 - xwt
 rules:
 - MATCH,PROXIES
