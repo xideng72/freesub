@@ -20,21 +20,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 02 - xwt
   type: vless
-  server: 202.166.187.132
+  server: 212.104.128.45
   port: 443
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: f.yoptybla.ru
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: f.yoptybla.ru
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 03 - xwt
   type: vless
-  server: 212.104.128.27
+  server: 212.104.128.139
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 04 - xwt
   type: vless
-  server: 212.104.128.217
+  server: 212.104.128.244
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -62,7 +62,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 05 - xwt
   type: vless
-  server: 212.104.128.45
+  server: 212.104.128.206
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -76,7 +76,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 06 - xwt
   type: vless
-  server: 212.104.128.244
+  server: 212.104.128.152
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -90,7 +90,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 07 - xwt
   type: vless
-  server: 212.104.128.68
+  server: 212.104.128.217
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -104,7 +104,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 08 - xwt
   type: vless
-  server: 212.104.128.217
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 09 - xwt
+  type: vless
+  server: 212.104.128.206
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -116,21 +130,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 09 - xwt
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: random
 - name: 🇫🇮 FI 10 - xwt
   type: vless
-  server: 212.104.128.217
+  server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -144,7 +146,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 11 - xwt
   type: vless
-  server: 212.104.128.244
+  server: 212.104.128.0
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -172,7 +174,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 13 - xwt
   type: vless
-  server: 212.104.128.139
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -186,21 +188,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 14 - xwt
   type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 31.76.80.230
+  port: 8443
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: fin.luxes.network
   network: ws
   ws-opts:
-    path: /
+    path: /assets
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: 31.76.80.230
 - name: 🇫🇮 FI 15 - xwt
   type: vless
-  server: 212.104.128.0
+  server: 212.104.128.45
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -214,7 +216,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 16 - xwt
   type: vless
-  server: 212.104.128.139
+  server: 212.104.128.0
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -228,7 +230,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 17 - xwt
   type: vless
-  server: 212.104.128.0
+  server: 212.104.128.45
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -242,21 +244,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 18 - xwt
   type: vless
-  server: 151.101.56.7
+  server: 212.104.128.68
   port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: global.fastly.com
+  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: kayko.global.ssl.fastly.net
+      Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 19 - xwt
   type: vless
-  server: 212.104.128.45
+  server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -270,21 +272,21 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 20 - xwt
   type: vless
-  server: 212.104.128.68
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 31.76.80.230
+  port: 8443
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
+  servername: fin.luxes.network
   network: ws
   ws-opts:
-    path: /
+    path: /assets
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: 31.76.80.230
 - name: 🇫🇮 FI 21 - xwt
   type: vless
-  server: 212.104.128.206
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -298,7 +300,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 22 - xwt
   type: vless
-  server: 212.104.128.152
+  server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -312,7 +314,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 23 - xwt
   type: vless
-  server: 212.104.128.206
+  server: 212.104.128.139
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -326,21 +328,19 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 24 - xwt
   type: vless
-  server: 212.104.128.27
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 FI 25 - xwt
   type: vless
-  server: 212.104.128.68
+  server: 212.104.128.244
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -354,7 +354,7 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 26 - xwt
   type: vless
-  server: 212.104.128.27
+  server: 212.104.128.217
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -368,6 +368,20 @@ proxies:
       Host: xi.tbv.ccwu.cc
 - name: 🇫🇮 FI 27 - xwt
   type: vless
+  server: 212.104.128.217
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 28 - xwt
+  type: vless
   server: 212.104.128.106
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -380,6 +394,30 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 29 - xwt
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 30 - xwt
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -412,6 +450,9 @@ proxy-groups:
   - 🇫🇮 FI 25 - xwt
   - 🇫🇮 FI 26 - xwt
   - 🇫🇮 FI 27 - xwt
+  - 🇫🇮 FI 28 - xwt
+  - 🇫🇮 FI 29 - xwt
+  - 🇫🇮 FI 30 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -444,5 +485,8 @@ proxy-groups:
   - 🇫🇮 FI 25 - xwt
   - 🇫🇮 FI 26 - xwt
   - 🇫🇮 FI 27 - xwt
+  - 🇫🇮 FI 28 - xwt
+  - 🇫🇮 FI 29 - xwt
+  - 🇫🇮 FI 30 - xwt
 rules:
 - MATCH,PROXIES

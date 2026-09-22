@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 HU 01 - xwt",
-        "🇭🇺 HU 02 - xwt",
-        "🇭🇺 HU 03 - xwt"
+        "🇭🇺 HU 01 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 HU 01 - xwt",
-        "🇭🇺 HU 02 - xwt",
-        "🇭🇺 HU 03 - xwt"
+        "🇭🇺 HU 01 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },

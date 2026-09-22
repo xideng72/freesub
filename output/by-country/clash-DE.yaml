@@ -5,9 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xwt
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 02 - xwt
   type: vless
-  server: 109.176.202.20
-  port: 443
+  server: 92.119.126.189
+  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -15,59 +25,10 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇩🇪 德国 (Germany) 02 - xwt
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
 - name: 🇩🇪 德国 (Germany) 03 - xwt
-  type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 04 - xwt
-  type: vless
-  server: 103.109.234.61
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇩🇪 德国 (Germany) 05 - xwt
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - xwt
   type: vless
   server: 172.67.130.159
   port: 2096
@@ -81,7 +42,109 @@ proxies:
     path: /3cagtz3
     headers:
       Host: cdn-de.skyvora.app
+- name: 🇩🇪 德国 (Germany) 04 - xwt
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 05 - xwt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xwt
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 07 - xwt
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 08 - xwt
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - xwt
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - xwt
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 11 - xwt
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 12 - xwt
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 13 - xwt
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 14 - xwt
   type: vless
   server: 103.228.168.182
   port: 443
@@ -95,21 +158,50 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇩🇪 德国 (Germany) 08 - xwt
-  type: vless
-  server: 64.226.95.244
-  port: 2096
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+- name: 🇩🇪 德国 (Germany) 15 - xwt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: true
+- name: 🇩🇪 德国 (Germany) 16 - xwt
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: cf3.schzyc.cc.cd
-- name: 🇩🇪 德国 (Germany) 09 - xwt
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 17 - xwt
+  type: vmess
+  server: huifkhrte386.greendop.com
+  port: 8080
+  uuid: d73de85a-6434-44cc-a81d-e2576b3fbd43
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 18 - xwt
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: zoom.us
+- name: 🇩🇪 德国 (Germany) 19 - xwt
   type: vmess
   server: kentspark.org
   port: 443
@@ -125,55 +217,26 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇩🇪 德国 (Germany) 10 - xwt
+- name: 🇩🇪 德国 (Germany) 20 - xwt
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - xwt
   type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 11 - xwt
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 12 - xwt
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 13 - xwt
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - xwt
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 22 - xwt
   type: vmess
   server: 216.106.187.60
   port: 22324
@@ -183,10 +246,10 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 15 - xwt
+- name: 🇩🇪 德国 (Germany) 23 - xwt
   type: vless
-  server: 103.200.28.113
-  port: 8443
+  server: 109.120.138.192
+  port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -197,43 +260,77 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇩🇪 德国 (Germany) 16 - xwt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 24 - xwt
+  type: vless
+  server: 167.172.165.106
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
   udp: true
-- name: 🇩🇪 德国 (Germany) 17 - xwt
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 25 - xwt
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
-- name: 🇩🇪 德国 (Germany) 18 - xwt
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 26 - xwt
+  type: vless
+  server: 109.176.202.20
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇪 德国 (Germany) 27 - xwt
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 19 - xwt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+- name: 🇩🇪 德国 (Germany) 28 - xwt
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
   udp: true
-  tls: false
+- name: 🇩🇪 德国 (Germany) 29 - xwt
+  type: vless
+  server: shuma.ccwu.cc
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: OV-Germany1.09vpn.com
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -258,6 +355,16 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - xwt
   - 🇩🇪 德国 (Germany) 18 - xwt
   - 🇩🇪 德国 (Germany) 19 - xwt
+  - 🇩🇪 德国 (Germany) 20 - xwt
+  - 🇩🇪 德国 (Germany) 21 - xwt
+  - 🇩🇪 德国 (Germany) 22 - xwt
+  - 🇩🇪 德国 (Germany) 23 - xwt
+  - 🇩🇪 德国 (Germany) 24 - xwt
+  - 🇩🇪 德国 (Germany) 25 - xwt
+  - 🇩🇪 德国 (Germany) 26 - xwt
+  - 🇩🇪 德国 (Germany) 27 - xwt
+  - 🇩🇪 德国 (Germany) 28 - xwt
+  - 🇩🇪 德国 (Germany) 29 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -282,5 +389,15 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - xwt
   - 🇩🇪 德国 (Germany) 18 - xwt
   - 🇩🇪 德国 (Germany) 19 - xwt
+  - 🇩🇪 德国 (Germany) 20 - xwt
+  - 🇩🇪 德国 (Germany) 21 - xwt
+  - 🇩🇪 德国 (Germany) 22 - xwt
+  - 🇩🇪 德国 (Germany) 23 - xwt
+  - 🇩🇪 德国 (Germany) 24 - xwt
+  - 🇩🇪 德国 (Germany) 25 - xwt
+  - 🇩🇪 德国 (Germany) 26 - xwt
+  - 🇩🇪 德国 (Germany) 27 - xwt
+  - 🇩🇪 德国 (Germany) 28 - xwt
+  - 🇩🇪 德国 (Germany) 29 - xwt
 rules:
 - MATCH,PROXIES

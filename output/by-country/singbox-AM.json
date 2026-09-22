@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - xwt",
-        "🇦🇲 AM 02 - xwt"
+        "🇦🇲 AM 01 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - xwt",
-        "🇦🇲 AM 02 - xwt"
+        "🇦🇲 AM 01 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },
