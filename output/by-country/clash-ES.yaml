@@ -5,19 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xwt
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
 - name: 🇪🇸 西班牙 (Spain) 02 - xwt
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  type: vless
+  server: 196.245.52.147
+  port: 25535
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+  servername: www.microsoft.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

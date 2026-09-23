@@ -5,77 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xwt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  type: ss
+  server: 130.61.180.252
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: CJz7/MZF6sW6ylvOCfAE+EmAqYZKN1GnMlS4tGUS3J4=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 02 - xwt
   type: vmess
   server: 216.106.187.60
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kentspark.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: kentspark.org
-- name: 🇩🇪 德国 (Germany) 03 - xwt
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 03 - xwt
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
 - name: 🇩🇪 德国 (Germany) 04 - xwt
-  type: vmess
-  server: aidrivercat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 05 - xwt
   type: vless
-  server: 172.67.130.159
-  port: 2096
-  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  server: 199.232.78.159
+  port: 443
+  uuid: 9f714831-a392-429d-b09f-15f0e4653049
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn-de.skyvora.app
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /3cagtz3
+    path: /
     headers:
-      Host: cdn-de.skyvora.app
+      Host: lsjaoijji.global.ssl.fastly.neT
+- name: 🇩🇪 德国 (Germany) 05 - xwt
+  type: ss
+  server: 130.61.232.101
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: f+Q/z5EHlXtbRPZBqT8ygy+RUkwnc6kMcd8UY8iyxU8=
+  udp: true
 - name: 🇩🇪 德国 (Germany) 06 - xwt
   type: vmess
-  server: kentspark.org
+  server: 216.106.187.60
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -90,22 +66,51 @@ proxies:
     headers:
       Host: kentspark.org
 - name: 🇩🇪 德国 (Germany) 07 - xwt
-  type: vmess
-  server: aidrivercat.org
+  type: ss
+  server: 130.61.130.205
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oez/eAOjbnuo75MPFJBQDnCnLeIfcr4eQ2txjGMLWXs=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 08 - xwt
+  type: vless
+  server: rubifen.adaspoloandco.com
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: rubifen.adaspoloandco.com
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /GOrbEh
     headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 08 - xwt
+      Host: rubifen.adaspoloandco.com
+- name: 🇩🇪 德国 (Germany) 09 - xwt
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - xwt
+  type: ss
+  server: 130.61.150.64
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: MbYmuMLaB299+b+tHO5lTDizuqcxnh0y5bvchPVbzWU=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 11 - xwt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - xwt
   type: vless
   server: 172.67.130.159
   port: 2096
@@ -119,73 +124,39 @@ proxies:
     path: /3cagtz3
     headers:
       Host: cdn-de.skyvora.app
-- name: 🇩🇪 德国 (Germany) 09 - xwt
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 10 - xwt
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 11 - xwt
-  type: vmess
-  server: aidrivercat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
-- name: 🇩🇪 德国 (Germany) 12 - xwt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
 - name: 🇩🇪 德国 (Germany) 13 - xwt
-  type: vmess
-  server: 216.106.187.60
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kentspark.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: kentspark.org
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇩🇪 德国 (Germany) 14 - xwt
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 130.61.41.250
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zilToN5OddXbe0YD2wu0SiDIctB+e2ATBlXmzJjEmc4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - xwt
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 15 - xwt
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 16 - xwt
   type: vless
   server: 34.185.172.52
   port: 443
@@ -197,29 +168,32 @@ proxies:
     public-key: -XH2d9x4wRi--KvR6XTcZW9HXbikI2_262zfYDr1uFw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 16 - xwt
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
 - name: 🇩🇪 德国 (Germany) 17 - xwt
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
 - name: 🇩🇪 德国 (Germany) 18 - xwt
   type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-de.skyvora.app
+  network: ws
+  ws-opts:
+    path: /3cagtz3
+    headers:
+      Host: cdn-de.skyvora.app
+- name: 🇩🇪 德国 (Germany) 19 - xwt
+  type: vless
   server: 81.95.4.189
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
@@ -232,6 +206,47 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 20 - xwt
+  type: ss
+  server: 130.61.235.137
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IJPKybdCWc1qvoGqy0e6tflGkAAKCXe9FaWcBTjgfDs=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - xwt
+  type: vless
+  server: 82.24.203.20
+  port: 2087
+  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fd5ba98a3970
+    headers:
+      Host: 82.24.203.20
+- name: 🇩🇪 德国 (Germany) 22 - xwt
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 23 - xwt
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -255,6 +270,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 16 - xwt
   - 🇩🇪 德国 (Germany) 17 - xwt
   - 🇩🇪 德国 (Germany) 18 - xwt
+  - 🇩🇪 德国 (Germany) 19 - xwt
+  - 🇩🇪 德国 (Germany) 20 - xwt
+  - 🇩🇪 德国 (Germany) 21 - xwt
+  - 🇩🇪 德国 (Germany) 22 - xwt
+  - 🇩🇪 德国 (Germany) 23 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -278,5 +298,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 16 - xwt
   - 🇩🇪 德国 (Germany) 17 - xwt
   - 🇩🇪 德国 (Germany) 18 - xwt
+  - 🇩🇪 德国 (Germany) 19 - xwt
+  - 🇩🇪 德国 (Germany) 20 - xwt
+  - 🇩🇪 德国 (Germany) 21 - xwt
+  - 🇩🇪 德国 (Germany) 22 - xwt
+  - 🇩🇪 德国 (Germany) 23 - xwt
 rules:
 - MATCH,PROXIES
