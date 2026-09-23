@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 MD 01 - xwt",
-        "🇲🇩 MD 02 - xwt",
-        "🇲🇩 MD 03 - xwt",
-        "🇲🇩 MD 04 - xwt"
+        "🇲🇩 MD 01 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 MD 01 - xwt",
-        "🇲🇩 MD 02 - xwt",
-        "🇲🇩 MD 03 - xwt",
-        "🇲🇩 MD 04 - xwt"
+        "🇲🇩 MD 01 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },

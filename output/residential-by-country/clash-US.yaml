@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xwt
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xwt
   type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  server: 104.18.34.14
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hub-de-03.hanvpn.cc
   network: ws
   ws-opts:
-    path: /de03-ws-8e47a
+    path: /?ed=2560security=tlssecurity=tls
     headers:
-      Host: hub-de-03.hanvpn.cc
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xwt
+  - 🇺🇸 美国 (United States) 01 (家宽) - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xwt
+  - 🇺🇸 美国 (United States) 01 (家宽) - xwt
 rules:
 - MATCH,PROXIES
