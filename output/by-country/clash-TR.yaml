@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xwt
   type: vless
-  server: 172.67.192.84
-  port: 2095
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  server: 146.75.84.3
+  port: 443
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /juvsrnmgdu8i0179k5
+    path: /
     headers:
-      Host: index.harmonica02.workers.dev
+      Host: BechBad.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select

@@ -18,16 +18,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xwt
   type: vless
-  server: 34.87.229.148
+  server: 34.87.244.111
   port: 443
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xwt
   type: vless
   server: 34.87.229.148
@@ -39,19 +39,19 @@ proxies:
   reality-opts:
     public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 04 - xwt
   type: vless
-  server: 34.87.229.148
+  server: 34.87.244.111
   port: 443
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xwt
   type: vless
   server: 34.87.244.111
@@ -75,17 +75,17 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 07 - xwt
   type: vless
-  server: 34.87.244.111
+  server: 34.87.229.148
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 08 - xwt
@@ -99,7 +99,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 09 - xwt
   type: vless
   server: 34.87.244.111
@@ -111,32 +111,8 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇦🇺 澳大利亚 (Australia) 10 - xwt
-  type: vless
-  server: 34.87.229.148
-  port: 443
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 11 - xwt
-  type: vless
-  server: 34.87.244.111
-  port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇦🇺 澳大利亚 (Australia) 12 - xwt
   type: vless
   server: 34.87.244.111
   port: 443
@@ -163,8 +139,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 08 - xwt
   - 🇦🇺 澳大利亚 (Australia) 09 - xwt
   - 🇦🇺 澳大利亚 (Australia) 10 - xwt
-  - 🇦🇺 澳大利亚 (Australia) 11 - xwt
-  - 🇦🇺 澳大利亚 (Australia) 12 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -180,7 +154,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 08 - xwt
   - 🇦🇺 澳大利亚 (Australia) 09 - xwt
   - 🇦🇺 澳大利亚 (Australia) 10 - xwt
-  - 🇦🇺 澳大利亚 (Australia) 11 - xwt
-  - 🇦🇺 澳大利亚 (Australia) 12 - xwt
 rules:
 - MATCH,PROXIES
