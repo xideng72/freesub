@@ -24,32 +24,41 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xwt
-  type: ss
-  server: 103.136.150.119
-  port: 10090
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
+  type: vless
+  server: 34.96.146.210
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xwt
   type: vless
-  server: 108.162.198.178
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 34.96.146.210
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xwt
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: wwj19enpp68px8t7
+  type: vless
+  server: 34.96.146.210
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xwt
   type: vless
   server: 34.96.146.210
@@ -61,52 +70,8 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xwt
-  type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xwt
-  type: vless
-  server: 34.96.146.210
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xwt
-  type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xwt
-  type: vless
-  server: 34.96.146.210
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xwt
   type: vless
   server: 34.96.146.210
   port: 443
@@ -118,6 +83,59 @@ proxies:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
   servername: www.cloudflare.com
   client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xwt
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xwt
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xwt
+  type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xwt
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xwt
+  type: ss
+  server: sth.free-outline.giize.com
+  port: 1081
+  cipher: chacha20-ietf-poly1305
+  password: r6tptrwvddxap6al
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,6 +152,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - xwt
   - 🇭🇰 中国香港 (Hong Kong) 10 - xwt
   - 🇭🇰 中国香港 (Hong Kong) 11 - xwt
+  - 🇭🇰 中国香港 (Hong Kong) 12 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -150,5 +169,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - xwt
   - 🇭🇰 中国香港 (Hong Kong) 10 - xwt
   - 🇭🇰 中国香港 (Hong Kong) 11 - xwt
+  - 🇭🇰 中国香港 (Hong Kong) 12 - xwt
 rules:
 - MATCH,PROXIES

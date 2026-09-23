@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xwt
   type: vless
   server: 34.81.223.1
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xwt
   type: vless
   server: 34.81.223.1
@@ -51,7 +51,7 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: edge
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - xwt
   type: vless
   server: 60.248.219.78
@@ -77,7 +77,7 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 07 - xwt
   type: vless
   server: 34.81.223.1
@@ -89,7 +89,7 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇹🇼 中国台湾 (Taiwan) 08 - xwt
   type: vmess
   server: 165.154.195.38
