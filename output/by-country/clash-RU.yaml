@@ -19,13 +19,6 @@ proxies:
     headers:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xwt
-  type: ss
-  server: 62.113.41.165
-  port: 888
-  cipher: chacha20-ietf-poly1305
-  password: hF-qqin2wYhP7zS47SyR0Q
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xwt
   type: vless
   server: fbsv6.guardora.pro
   port: 443
@@ -39,6 +32,33 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xwt
+  type: vless
+  server: 104.18.34.14
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xwt
+  type: vless
+  server: 217.19.122.65
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +67,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
   - 🇷🇺 俄罗斯 (Russia) 02 - xwt
   - 🇷🇺 俄罗斯 (Russia) 03 - xwt
+  - 🇷🇺 俄罗斯 (Russia) 04 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +76,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
   - 🇷🇺 俄罗斯 (Russia) 02 - xwt
   - 🇷🇺 俄罗斯 (Russia) 03 - xwt
+  - 🇷🇺 俄罗斯 (Russia) 04 - xwt
 rules:
 - MATCH,PROXIES
