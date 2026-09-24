@@ -19,7 +19,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - xwt
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -32,33 +32,32 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - xwt
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /snob-ws
     headers:
-      Host: uae.unixzone.us
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 04 - xwt
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.58.181.88
+  port: 8443
+  uuid: 0cfc5fac-1d0d-4d66-a099-5f6802d3243b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 05 - xwt
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -82,6 +81,56 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xwt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - xwt
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 93a8f0b3-4c97-4d14-999c-c207a55b70b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 09 - xwt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - xwt
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +142,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xwt
   - 🇦🇪 阿联酋 (UAE) 05 - xwt
   - 🇦🇪 阿联酋 (UAE) 06 - xwt
+  - 🇦🇪 阿联酋 (UAE) 07 - xwt
+  - 🇦🇪 阿联酋 (UAE) 08 - xwt
+  - 🇦🇪 阿联酋 (UAE) 09 - xwt
+  - 🇦🇪 阿联酋 (UAE) 10 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +157,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xwt
   - 🇦🇪 阿联酋 (UAE) 05 - xwt
   - 🇦🇪 阿联酋 (UAE) 06 - xwt
+  - 🇦🇪 阿联酋 (UAE) 07 - xwt
+  - 🇦🇪 阿联酋 (UAE) 08 - xwt
+  - 🇦🇪 阿联酋 (UAE) 09 - xwt
+  - 🇦🇪 阿联酋 (UAE) 10 - xwt
 rules:
 - MATCH,PROXIES

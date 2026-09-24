@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - xwt",
-        "🇸🇨 SC 02 - xwt"
+        "🇹🇷 土耳其 (Turkey) 01 - xwt",
+        "🇹🇷 土耳其 (Turkey) 02 - xwt",
+        "🇹🇷 土耳其 (Turkey) 03 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - xwt",
-        "🇸🇨 SC 02 - xwt"
+        "🇹🇷 土耳其 (Turkey) 01 - xwt",
+        "🇹🇷 土耳其 (Turkey) 02 - xwt",
+        "🇹🇷 土耳其 (Turkey) 03 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -5,40 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xwt
-  type: ss
-  server: 141.164.45.187
-  port: 5498
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 02 - xwt
-  type: vless
-  server: 47.80.57.116
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia6.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia6.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 03 - xwt
-  type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 - xwt
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -50,7 +16,14 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 05 - xwt
+- name: 🇰🇷 韩国 (South Korea) 02 - xwt
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 03 - xwt
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -70,8 +43,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - xwt
   - 🇰🇷 韩国 (South Korea) 02 - xwt
   - 🇰🇷 韩国 (South Korea) 03 - xwt
-  - 🇰🇷 韩国 (South Korea) 04 - xwt
-  - 🇰🇷 韩国 (South Korea) 05 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,7 +51,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - xwt
   - 🇰🇷 韩国 (South Korea) 02 - xwt
   - 🇰🇷 韩国 (South Korea) 03 - xwt
-  - 🇰🇷 韩国 (South Korea) 04 - xwt
-  - 🇰🇷 韩国 (South Korea) 05 - xwt
 rules:
 - MATCH,PROXIES
