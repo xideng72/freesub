@@ -18,20 +18,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.24
-- name: 🇨🇦 加拿大 (Canada) 02 (家宽) - xwt
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xwt
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xwt
   type: ss
   server: 36.224.141.124
   port: 50099
@@ -44,15 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xwt
-  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xwt
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xwt
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xwt
-  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xwt
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xwt
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xwt
 rules:
 - MATCH,PROXIES

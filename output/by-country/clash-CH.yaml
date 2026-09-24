@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xwt
+- name: 🇨🇭 CH 01 - xwt
   type: ss
-  server: p1tun4.greewebservices.ir
-  port: 1080
+  server: 132.243.175.144
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xwt
+  - 🇨🇭 CH 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xwt
+  - 🇨🇭 CH 01 - xwt
 rules:
 - MATCH,PROXIES

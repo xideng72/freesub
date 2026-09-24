@@ -15,7 +15,7 @@ proxies:
   servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /ws
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xwt
@@ -29,22 +29,9 @@ proxies:
   servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xwt
-  type: vless
-  server: 172.64.42.85
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
   - 🇷🇺 俄罗斯 (Russia) 02 - xwt
-  - 🇷🇺 俄罗斯 (Russia) 03 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
   - 🇷🇺 俄罗斯 (Russia) 02 - xwt
-  - 🇷🇺 俄罗斯 (Russia) 03 - xwt
 rules:
 - MATCH,PROXIES
