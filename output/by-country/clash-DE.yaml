@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xwt
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -15,13 +15,47 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 02 - xwt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 03 - xwt
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 04 - xwt
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 05 - xwt
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xwt
   type: vmess
   server: aidrivercat.org
   port: 443
@@ -37,58 +71,7 @@ proxies:
     path: /linkvws
     headers:
       Host: ''
-- name: 🇩🇪 德国 (Germany) 04 - xwt
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 05 - xwt
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 06 - xwt
-  type: vmess
-  server: me6.movieseryalirani.ir
-  port: 57361
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 07 - xwt
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 08 - xwt
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - xwt
   type: vless
   server: 35.157.240.237
   port: 443
@@ -102,20 +85,14 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 10 - xwt
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+- name: 🇩🇪 德国 (Germany) 08 - xwt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 11 - xwt
+- name: 🇩🇪 德国 (Germany) 09 - xwt
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -125,13 +102,76 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - xwt
+  type: vless
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 11 - xwt
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
 - name: 🇩🇪 德国 (Germany) 12 - xwt
   type: ss
-  server: creativegermany.zanity.net
-  port: 5228
+  server: 209.46.102.22
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: IdU1jzHh7ZszbUC5v2mA9W
+  password: 1hhrqrokj3ag
   udp: true
+- name: 🇩🇪 德国 (Germany) 13 - xwt
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 14 - xwt
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - xwt
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 16 - xwt
+  type: vmess
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 17 - xwt
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,6 +189,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 10 - xwt
   - 🇩🇪 德国 (Germany) 11 - xwt
   - 🇩🇪 德国 (Germany) 12 - xwt
+  - 🇩🇪 德国 (Germany) 13 - xwt
+  - 🇩🇪 德国 (Germany) 14 - xwt
+  - 🇩🇪 德国 (Germany) 15 - xwt
+  - 🇩🇪 德国 (Germany) 16 - xwt
+  - 🇩🇪 德国 (Germany) 17 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -166,5 +211,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 10 - xwt
   - 🇩🇪 德国 (Germany) 11 - xwt
   - 🇩🇪 德国 (Germany) 12 - xwt
+  - 🇩🇪 德国 (Germany) 13 - xwt
+  - 🇩🇪 德国 (Germany) 14 - xwt
+  - 🇩🇪 德国 (Germany) 15 - xwt
+  - 🇩🇪 德国 (Germany) 16 - xwt
+  - 🇩🇪 德国 (Germany) 17 - xwt
 rules:
 - MATCH,PROXIES
