@@ -4,30 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 (家宽) - xwt
+- name: 🇦🇺 澳大利亚 (Australia) 01 - xwt
   type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 172.105.169.70
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
+  servername: 172.105.169.70
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 (家宽) - xwt
+  - 🇦🇺 澳大利亚 (Australia) 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 (家宽) - xwt
+  - 🇦🇺 澳大利亚 (Australia) 01 - xwt
 rules:
 - MATCH,PROXIES
