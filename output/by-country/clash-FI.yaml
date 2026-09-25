@@ -19,8 +19,18 @@ proxies:
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 02 - xwt
+  type: vmess
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 03 - xwt
   type: vless
-  server: 151.101.56.6
+  server: k2.cloud--vpn.site
   port: 443
   uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
@@ -29,16 +39,9 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
+    path: /?edTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 03 - xwt
-  type: ss
-  server: p1tun2.greewebservices.ir
-  port: 2060
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
-  udp: true
 - name: 🇫🇮 FI 04 - xwt
   type: vmess
   server: me6.movieseryalirani.ir
@@ -60,12 +63,12 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?edTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 06 - xwt
   type: vless
-  server: k2.cloud--vpn.site
+  server: 151.101.56.6
   port: 443
   uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
@@ -74,9 +77,19 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
     headers:
       Host: c12.com
+- name: 🇫🇮 FI 07 - xwt
+  type: vmess
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +101,7 @@ proxy-groups:
   - 🇫🇮 FI 04 - xwt
   - 🇫🇮 FI 05 - xwt
   - 🇫🇮 FI 06 - xwt
+  - 🇫🇮 FI 07 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,5 +113,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - xwt
   - 🇫🇮 FI 05 - xwt
   - 🇫🇮 FI 06 - xwt
+  - 🇫🇮 FI 07 - xwt
 rules:
 - MATCH,PROXIES

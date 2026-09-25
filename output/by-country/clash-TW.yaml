@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xwt
-  type: vless
-  server: 60.248.219.54
+  type: vmess
+  server: 24864168545164.oylfmxz.cn
   port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: ''
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /
     headers:
-      Host: 60.248.219.54
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xwt
   type: vless
   server: 60.248.219.78
@@ -34,14 +36,20 @@ proxies:
       Host: ty986gfazs.cainiaohub.xyz
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xwt
   type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  server: 24864168545164.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xwt
   type: vmess
   server: 165.154.195.38
@@ -62,26 +70,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xwt
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xwt
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,8 +80,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 04 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 05 - xwt
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xwt
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,7 +90,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 04 - xwt
   - 🇹🇼 中国台湾 (Taiwan) 05 - xwt
-  - 🇹🇼 中国台湾 (Taiwan) 06 - xwt
-  - 🇹🇼 中国台湾 (Taiwan) 07 - xwt
 rules:
 - MATCH,PROXIES
