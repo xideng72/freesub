@@ -5,85 +5,88 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xwt
-  type: vless
-  server: 104.18.80.149
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    path: /
     headers:
-      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 02 - xwt
-  type: vless
-  server: 15.224.68.85
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - xwt
   type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
+  server: 141.227.134.63
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
   udp: true
-- name: 🇫🇷 法国 (France) 04 - xwt
-  type: vless
-  server: 15.224.68.85
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 05 - xwt
-  type: vless
-  server: 172.67.206.254
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/5a26a30b00dc
-    headers:
-      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇫🇷 法国 (France) 06 - xwt
+- name: 🇫🇷 法国 (France) 03 - xwt
   type: ss
   server: 51.255.13.232
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 07 - xwt
-  type: vless
-  server: 104.21.50.143
+- name: 🇫🇷 法国 (France) 04 - xwt
+  type: ss
+  server: 54.36.174.140
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 05 - xwt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/5a26a30b00dc
+    path: /vws/
     headers:
-      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇫🇷 法国 (France) 08 - xwt
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 06 - xwt
   type: vless
-  server: 15.224.68.85
-  port: 22224
+  server: 35.181.245.210
+  port: 22222
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07 - xwt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 08 - xwt
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 09 - xwt
   type: vless
   server: 149.202.58.99
@@ -99,79 +102,6 @@ proxies:
     headers:
       Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 10 - xwt
-  type: vless
-  server: 15.224.68.85
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 11 - xwt
-  type: vless
-  server: 15.224.68.85
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 12 - xwt
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 13 - xwt
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇫🇷 法国 (France) 14 - xwt
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 15 - xwt
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 16 - xwt
-  type: vless
-  server: 15.224.68.85
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 17 - xwt
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -182,22 +112,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 18 - xwt
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 19 - xwt
+- name: 🇫🇷 法国 (France) 11 - xwt
   type: vless
   server: 149.202.58.99
   port: 443
@@ -211,35 +126,6 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 20 - xwt
-  type: ss
-  server: 141.227.134.63
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
-- name: 🇫🇷 法国 (France) 21 - xwt
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 22 - xwt
-  type: vless
-  server: 15.224.68.85
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -256,17 +142,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - xwt
   - 🇫🇷 法国 (France) 10 - xwt
   - 🇫🇷 法国 (France) 11 - xwt
-  - 🇫🇷 法国 (France) 12 - xwt
-  - 🇫🇷 法国 (France) 13 - xwt
-  - 🇫🇷 法国 (France) 14 - xwt
-  - 🇫🇷 法国 (France) 15 - xwt
-  - 🇫🇷 法国 (France) 16 - xwt
-  - 🇫🇷 法国 (France) 17 - xwt
-  - 🇫🇷 法国 (France) 18 - xwt
-  - 🇫🇷 法国 (France) 19 - xwt
-  - 🇫🇷 法国 (France) 20 - xwt
-  - 🇫🇷 法国 (France) 21 - xwt
-  - 🇫🇷 法国 (France) 22 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -283,16 +158,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 09 - xwt
   - 🇫🇷 法国 (France) 10 - xwt
   - 🇫🇷 法国 (France) 11 - xwt
-  - 🇫🇷 法国 (France) 12 - xwt
-  - 🇫🇷 法国 (France) 13 - xwt
-  - 🇫🇷 法国 (France) 14 - xwt
-  - 🇫🇷 法国 (France) 15 - xwt
-  - 🇫🇷 法国 (France) 16 - xwt
-  - 🇫🇷 法国 (France) 17 - xwt
-  - 🇫🇷 法国 (France) 18 - xwt
-  - 🇫🇷 法国 (France) 19 - xwt
-  - 🇫🇷 法国 (France) 20 - xwt
-  - 🇫🇷 法国 (France) 21 - xwt
-  - 🇫🇷 法国 (France) 22 - xwt
 rules:
 - MATCH,PROXIES

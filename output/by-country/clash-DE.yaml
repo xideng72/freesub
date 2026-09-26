@@ -6,6 +6,49 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xwt
   type: vless
+  server: ger-asl.jorzel.ir
+  port: 8087
+  uuid: 280e6d2e-b93e-4f51-bc9e-bf2bb709c81c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RIdGdVW-OSclLoLfjqsqtUg08TQUcdVcw2OeiYXgLDU
+  servername: forum.powerampapp.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 02 - xwt
+  type: vless
+  server: ger-asli.jorzel.ir
+  port: 9145
+  uuid: 280e6d2e-b93e-4f51-bc9e-bf2bb709c81c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Fw1tpKBQ_bT_eSTbaCSYBthpXAQ76kujwfywvjgpUA0
+  servername: android.clients.google.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 03 - xwt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - xwt
+  type: vless
+  server: ger-asli.jorzel.ir
+  port: 8087
+  uuid: 280e6d2e-b93e-4f51-bc9e-bf2bb709c81c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: RIdGdVW-OSclLoLfjqsqtUg08TQUcdVcw2OeiYXgLDU
+  servername: forum.powerampapp.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 05 - xwt
+  type: vless
   server: 81.95.4.189
   port: 443
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
@@ -18,7 +61,85 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 02 - xwt
+- name: 🇩🇪 德国 (Germany) 06 - xwt
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - xwt
+  type: vless
+  server: ger-asl.jorzel.ir
+  port: 9145
+  uuid: 280e6d2e-b93e-4f51-bc9e-bf2bb709c81c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Fw1tpKBQ_bT_eSTbaCSYBthpXAQ76kujwfywvjgpUA0
+  servername: android.clients.google.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 08 - xwt
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - xwt
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - xwt
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 11 - xwt
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 12 - xwt
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 13 - xwt
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - xwt
   type: vless
   server: 91.107.190.63
   port: 8080
@@ -31,33 +152,29 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 91.107.190.63
-- name: 🇩🇪 德国 (Germany) 03 - xwt
+- name: 🇩🇪 德国 (Germany) 15 - xwt
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 16 - xwt
   type: vless
-  server: de18.bexait.ir
-  port: 2434
-  uuid: 8dfc237e-0376-48b4-9822-5f4e627d41f1
+  server: 162.55.242.208
+  port: 2053
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
-  servername: icloud.com
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 04 - xwt
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - xwt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - xwt
+- name: 🇩🇪 德国 (Germany) 17 - xwt
   type: vless
   server: 35.157.240.237
   port: 443
@@ -71,45 +188,7 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 07 - xwt
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - xwt
-  type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 09 - xwt
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 10 - xwt
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 11 - xwt
+- name: 🇩🇪 德国 (Germany) 18 - xwt
   type: ss
   server: 213.202.208.199
   port: 7001
@@ -132,6 +211,13 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 09 - xwt
   - 🇩🇪 德国 (Germany) 10 - xwt
   - 🇩🇪 德国 (Germany) 11 - xwt
+  - 🇩🇪 德国 (Germany) 12 - xwt
+  - 🇩🇪 德国 (Germany) 13 - xwt
+  - 🇩🇪 德国 (Germany) 14 - xwt
+  - 🇩🇪 德国 (Germany) 15 - xwt
+  - 🇩🇪 德国 (Germany) 16 - xwt
+  - 🇩🇪 德国 (Germany) 17 - xwt
+  - 🇩🇪 德国 (Germany) 18 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -148,5 +234,12 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 09 - xwt
   - 🇩🇪 德国 (Germany) 10 - xwt
   - 🇩🇪 德国 (Germany) 11 - xwt
+  - 🇩🇪 德国 (Germany) 12 - xwt
+  - 🇩🇪 德国 (Germany) 13 - xwt
+  - 🇩🇪 德国 (Germany) 14 - xwt
+  - 🇩🇪 德国 (Germany) 15 - xwt
+  - 🇩🇪 德国 (Germany) 16 - xwt
+  - 🇩🇪 德国 (Germany) 17 - xwt
+  - 🇩🇪 德国 (Germany) 18 - xwt
 rules:
 - MATCH,PROXIES
