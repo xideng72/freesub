@@ -5,13 +5,100 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xwt
-  type: ss
-  server: 141.227.134.63
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  type: vless
+  server: qkzh44eaul4s.n2za73e1u2xs.workers.dev
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-6f3c5a20fcd8
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qkzh44eaul4s.n2za73e1u2xs.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/6f3c5a20fcd8
+    headers:
+      Host: qkzh44eaul4s.n2za73e1u2xs.workers.dev
 - name: 🇫🇷 法国 (France) 02 - xwt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 03 - xwt
+  type: vless
+  server: 104.21.72.47
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 04 - xwt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 05 - xwt
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 06 - xwt
+  type: vless
+  server: 147.135.213.72
+  port: 20087
+  uuid: 51c64da8-96aa-4462-8aa6-22f35f074c47
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /parham-confing-ws
+    headers:
+      Host: 147.135.213.72
+- name: 🇫🇷 法国 (France) 07 - xwt
+  type: vless
+  server: 104.20.17.127
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 08 - xwt
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -22,7 +109,85 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 03 - xwt
+- name: 🇫🇷 法国 (France) 09 - xwt
+  type: vless
+  server: 13.39.231.13
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 10 - xwt
+  type: vless
+  server: 172.67.193.182
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 11 - xwt
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 12 - xwt
+  type: ss
+  server: 141.227.134.63
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  udp: true
+- name: 🇫🇷 法国 (France) 13 - xwt
+  type: vless
+  server: 35.157.240.237
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 14 - xwt
+  type: vless
+  server: 104.18.80.149
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    headers:
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+- name: 🇫🇷 法国 (France) 15 - xwt
+  type: vless
+  server: 104.21.40.72
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-6f3c5a20fcd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qkzh44eaul4s.n2za73e1u2xs.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/6f3c5a20fcd8
+    headers:
+      Host: qkzh44eaul4s.n2za73e1u2xs.workers.dev
+- name: 🇫🇷 法国 (France) 16 - xwt
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -37,36 +202,71 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 04 - xwt
+- name: 🇫🇷 法国 (France) 17 - xwt
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
+- name: 🇫🇷 法国 (France) 18 - xwt
+  type: vless
+  server: 13.39.231.13
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 19 - xwt
+  type: ss
+  server: 141.227.134.63
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  udp: true
+- name: 🇫🇷 法国 (France) 20 - xwt
+  type: vless
+  server: 172.67.155.231
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: INDEX.Arcane509.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 🇫🇷 法国 (France) 21 - xwt
   type: ss
   server: 51.255.13.232
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 05 - xwt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+- name: 🇫🇷 法国 (France) 22 - xwt
+  type: vless
+  server: 172.67.181.53
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-6f3c5a20fcd8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 06 - xwt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07 - xwt
+  servername: qkzh44eaul4s.n2za73e1u2xs.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/6f3c5a20fcd8
+    headers:
+      Host: qkzh44eaul4s.n2za73e1u2xs.workers.dev
+- name: 🇫🇷 法国 (France) 23 - xwt
   type: vless
   server: 149.202.58.99
   port: 443
@@ -80,93 +280,78 @@ proxies:
     path: /vws/
     headers:
       Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 08 - xwt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 09 - xwt
+- name: 🇫🇷 法国 (France) 24 - xwt
   type: vless
-  server: 149.202.58.99
+  server: 15.224.68.85
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 25 - xwt
+  type: vless
+  server: 172.67.206.254
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
   network: ws
   ws-opts:
-    path: /vws/
+    path: /stream/PANEL_ZEUS/5a26a30b00dc
     headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 10 - xwt
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇫🇷 法国 (France) 11 - xwt
+      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+- name: 🇫🇷 法国 (France) 26 - xwt
   type: vless
-  server: 149.202.58.99
+  server: 88.216.69.144
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: 50414e45-4c5f-5a45-5553-4d64f1370eeb
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
   network: ws
   ws-opts:
-    path: /vws/
+    path: /stream/PANEL_ZEUS/4d64f1370eeb/loc-0
     headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 12 - xwt
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 13 - xwt
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 14 - xwt
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇫🇷 法国 (France) 15 - xwt
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
+- name: 🇫🇷 法国 (France) 27 - xwt
   type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  server: 13.39.231.13
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 28 - xwt
+  type: vless
+  server: 172.67.175.23
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 29 - xwt
+  type: vless
+  server: 104.21.50.143
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5a26a30b00dc
+    headers:
+      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -187,6 +372,20 @@ proxy-groups:
   - 🇫🇷 法国 (France) 13 - xwt
   - 🇫🇷 法国 (France) 14 - xwt
   - 🇫🇷 法国 (France) 15 - xwt
+  - 🇫🇷 法国 (France) 16 - xwt
+  - 🇫🇷 法国 (France) 17 - xwt
+  - 🇫🇷 法国 (France) 18 - xwt
+  - 🇫🇷 法国 (France) 19 - xwt
+  - 🇫🇷 法国 (France) 20 - xwt
+  - 🇫🇷 法国 (France) 21 - xwt
+  - 🇫🇷 法国 (France) 22 - xwt
+  - 🇫🇷 法国 (France) 23 - xwt
+  - 🇫🇷 法国 (France) 24 - xwt
+  - 🇫🇷 法国 (France) 25 - xwt
+  - 🇫🇷 法国 (France) 26 - xwt
+  - 🇫🇷 法国 (France) 27 - xwt
+  - 🇫🇷 法国 (France) 28 - xwt
+  - 🇫🇷 法国 (France) 29 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -207,5 +406,19 @@ proxy-groups:
   - 🇫🇷 法国 (France) 13 - xwt
   - 🇫🇷 法国 (France) 14 - xwt
   - 🇫🇷 法国 (France) 15 - xwt
+  - 🇫🇷 法国 (France) 16 - xwt
+  - 🇫🇷 法国 (France) 17 - xwt
+  - 🇫🇷 法国 (France) 18 - xwt
+  - 🇫🇷 法国 (France) 19 - xwt
+  - 🇫🇷 法国 (France) 20 - xwt
+  - 🇫🇷 法国 (France) 21 - xwt
+  - 🇫🇷 法国 (France) 22 - xwt
+  - 🇫🇷 法国 (France) 23 - xwt
+  - 🇫🇷 法国 (France) 24 - xwt
+  - 🇫🇷 法国 (France) 25 - xwt
+  - 🇫🇷 法国 (France) 26 - xwt
+  - 🇫🇷 法国 (France) 27 - xwt
+  - 🇫🇷 法国 (France) 28 - xwt
+  - 🇫🇷 法国 (France) 29 - xwt
 rules:
 - MATCH,PROXIES

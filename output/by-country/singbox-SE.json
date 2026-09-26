@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - xwt",
-        "🇪🇪 EE 02 - xwt"
+        "🇸🇪 SE 01 - xwt",
+        "🇸🇪 SE 02 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - xwt",
-        "🇪🇪 EE 02 - xwt"
+        "🇸🇪 SE 01 - xwt",
+        "🇸🇪 SE 02 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },
