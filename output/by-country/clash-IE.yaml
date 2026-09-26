@@ -9,7 +9,7 @@ proxies:
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: V3WiGKNQiqOCsT60
+  password: r732TlgjWIjfRcok
   udp: true
 - name: 🇮🇪 IE 02 - xwt
   type: ss
@@ -23,14 +23,7 @@ proxies:
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: C8QhmBLJzhKo2JHR
-  udp: true
-- name: 🇮🇪 IE 04 - xwt
-  type: ss
-  server: 20.234.96.89
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: r732TlgjWIjfRcok
+  password: V3WiGKNQiqOCsT60
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -40,7 +33,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - xwt
   - 🇮🇪 IE 02 - xwt
   - 🇮🇪 IE 03 - xwt
-  - 🇮🇪 IE 04 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,6 +41,5 @@ proxy-groups:
   - 🇮🇪 IE 01 - xwt
   - 🇮🇪 IE 02 - xwt
   - 🇮🇪 IE 03 - xwt
-  - 🇮🇪 IE 04 - xwt
 rules:
 - MATCH,PROXIES
