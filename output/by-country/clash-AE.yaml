@@ -19,17 +19,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - xwt
   type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: nahan-core.netizo09.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - xwt
   type: vless
   server: uae.unixzone.us
@@ -45,18 +45,69 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - xwt
   type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rayan-007.maxima.dpdns.org
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - xwt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xwt
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xwt
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - xwt
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +117,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xwt
   - 🇦🇪 阿联酋 (UAE) 03 - xwt
   - 🇦🇪 阿联酋 (UAE) 04 - xwt
+  - 🇦🇪 阿联酋 (UAE) 05 - xwt
+  - 🇦🇪 阿联酋 (UAE) 06 - xwt
+  - 🇦🇪 阿联酋 (UAE) 07 - xwt
+  - 🇦🇪 阿联酋 (UAE) 08 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +130,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xwt
   - 🇦🇪 阿联酋 (UAE) 03 - xwt
   - 🇦🇪 阿联酋 (UAE) 04 - xwt
+  - 🇦🇪 阿联酋 (UAE) 05 - xwt
+  - 🇦🇪 阿联酋 (UAE) 06 - xwt
+  - 🇦🇪 阿联酋 (UAE) 07 - xwt
+  - 🇦🇪 阿联酋 (UAE) 08 - xwt
 rules:
 - MATCH,PROXIES

@@ -6,12 +6,19 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - xwt
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 02 - xwt
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 03 - xwt
   type: vless
   server: platform101.golnamakcert.top
   port: 80
@@ -24,12 +31,12 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
-- name: 🇿🇦 ZA 03 - xwt
+- name: 🇿🇦 ZA 04 - xwt
   type: ss
-  server: 139.84.247.164
-  port: 8388
+  server: 102.133.165.160
+  port: 16233
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -39,6 +46,7 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xwt
   - 🇿🇦 ZA 02 - xwt
   - 🇿🇦 ZA 03 - xwt
+  - 🇿🇦 ZA 04 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +55,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - xwt
   - 🇿🇦 ZA 02 - xwt
   - 🇿🇦 ZA 03 - xwt
+  - 🇿🇦 ZA 04 - xwt
 rules:
 - MATCH,PROXIES
