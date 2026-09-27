@@ -6,53 +6,29 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xwt
   type: vless
-  server: 84.38.183.237
+  server: fbsv6.guardora.pro
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ws.nightproducts.ru
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /vless#/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /ws
     headers:
-      Host: 84.38.183.237
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xwt
-  type: vless
-  server: 188.225.57.78
-  port: 443
-  uuid: 94877739-3af6-4fbb-85b6-ca6fe86c7696
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NCW-zK60GXsiDdlbxww18Pqp4kz3zTG1URHWS_bnfDk
-  servername: app4.betust.net
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xwt
-  type: vless
-  server: 31.130.149.165
-  port: 875
-  uuid: 4a9d6057-985a-4531-851c-5b4db77b0409
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
-  - 🇷🇺 俄罗斯 (Russia) 02 - xwt
-  - 🇷🇺 俄罗斯 (Russia) 03 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
-  - 🇷🇺 俄罗斯 (Russia) 02 - xwt
-  - 🇷🇺 俄罗斯 (Russia) 03 - xwt
 rules:
 - MATCH,PROXIES
