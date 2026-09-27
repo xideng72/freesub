@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇱 PL 01 - xwt",
+        "🇵🇱 PL 02 - xwt",
+        "🇵🇱 PL 03 - xwt",
+        "🇵🇱 PL 04 - xwt",
+        "🇵🇱 PL 05 - xwt",
+        "🇵🇱 PL 06 - xwt",
+        "🇵🇱 PL 07 - xwt",
+        "🇵🇱 PL 08 - xwt"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇱 PL 01 - xwt",
+        "🇵🇱 PL 02 - xwt",
+        "🇵🇱 PL 03 - xwt",
+        "🇵🇱 PL 04 - xwt",
+        "🇵🇱 PL 05 - xwt",
+        "🇵🇱 PL 06 - xwt",
+        "🇵🇱 PL 07 - xwt",
+        "🇵🇱 PL 08 - xwt"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
