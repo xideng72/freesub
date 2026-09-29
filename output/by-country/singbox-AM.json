@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - xwt",
-        "🇮🇪 IE 02 - xwt",
-        "🇮🇪 IE 03 - xwt",
-        "🇮🇪 IE 04 - xwt",
-        "🇮🇪 IE 05 - xwt",
-        "🇮🇪 IE 06 - xwt"
+        "🇦🇲 AM 01 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - xwt",
-        "🇮🇪 IE 02 - xwt",
-        "🇮🇪 IE 03 - xwt",
-        "🇮🇪 IE 04 - xwt",
-        "🇮🇪 IE 05 - xwt",
-        "🇮🇪 IE 06 - xwt"
+        "🇦🇲 AM 01 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },
