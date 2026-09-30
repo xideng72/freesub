@@ -4,7 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xwt
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xwt
+  type: vless
+  server: 172.64.158.146
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xwt
   type: vless
   server: 60.248.219.78
   port: 443
@@ -23,12 +36,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xwt
+  - 🇺🇸 美国 (United States) 01 (家宽) - xwt
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xwt
+  - 🇺🇸 美国 (United States) 01 (家宽) - xwt
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xwt
 rules:
 - MATCH,PROXIES

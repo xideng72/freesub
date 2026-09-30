@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xwt
-  type: ss
-  server: 176.120.17.22
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: vUtLhCy8T6zoZv9Y6EP2G9oyWXFFUv-d
+- name: 🇵🇱 PL 01 - xwt
+  type: vless
+  server: pl-irancell7.xelfona.ir
+  port: 2095
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xwt
+  - 🇵🇱 PL 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xwt
+  - 🇵🇱 PL 01 - xwt
 rules:
 - MATCH,PROXIES

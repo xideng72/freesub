@@ -6,48 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xwt
   type: vless
-  server: 103.71.22.26
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 02 - xwt
-  type: vless
-  server: 103.71.22.26
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 03 - xwt
-  type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 04 - xwt
-  type: vless
   server: 103.71.22.234
   port: 8443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
@@ -66,17 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - xwt
-  - 🇸🇪 SE 02 - xwt
-  - 🇸🇪 SE 03 - xwt
-  - 🇸🇪 SE 04 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - xwt
-  - 🇸🇪 SE 02 - xwt
-  - 🇸🇪 SE 03 - xwt
-  - 🇸🇪 SE 04 - xwt
 rules:
 - MATCH,PROXIES
