@@ -18,17 +18,33 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xwt
+  type: vless
+  server: 188.114.97.7
+  port: 443
+  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev
+  network: ws
+  ws-opts:
+    path: /7J5lLqtBnJg9WjVT?ed
+    headers:
+      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
+  - 🇷🇺 俄罗斯 (Russia) 02 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xwt
+  - 🇷🇺 俄罗斯 (Russia) 02 - xwt
 rules:
 - MATCH,PROXIES

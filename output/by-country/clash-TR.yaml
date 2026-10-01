@@ -12,17 +12,49 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - xwt
+  type: vless
+  server: 155.103.70.53
+  port: 30303
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇷 土耳其 (Turkey) 03 - xwt
+  type: vless
+  server: 130.94.0.228
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xwt
+  - 🇹🇷 土耳其 (Turkey) 02 - xwt
+  - 🇹🇷 土耳其 (Turkey) 03 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xwt
+  - 🇹🇷 土耳其 (Turkey) 02 - xwt
+  - 🇹🇷 土耳其 (Turkey) 03 - xwt
 rules:
 - MATCH,PROXIES
