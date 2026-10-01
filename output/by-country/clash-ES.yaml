@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xwt
-  type: vless
-  server: 34.175.19.8
-  port: 443
-  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - xwt
   type: ss
   server: 140.174.184.5
@@ -24,6 +19,33 @@ proxies:
   password: qItG8SueYQcP
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 03 - xwt
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 04 - xwt
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 05 - xwt
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 06 - xwt
   type: vmess
   server: 66.163.118.73
   port: 443
@@ -39,33 +61,22 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 04 - xwt
+- name: 🇪🇸 西班牙 (Spain) 07 - xwt
   type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - xwt
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 06 - xwt
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +88,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xwt
   - 🇪🇸 西班牙 (Spain) 05 - xwt
   - 🇪🇸 西班牙 (Spain) 06 - xwt
+  - 🇪🇸 西班牙 (Spain) 07 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +100,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xwt
   - 🇪🇸 西班牙 (Spain) 05 - xwt
   - 🇪🇸 西班牙 (Spain) 06 - xwt
+  - 🇪🇸 西班牙 (Spain) 07 - xwt
 rules:
 - MATCH,PROXIES

@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 LT 01 - xwt"
+        "🇧🇾 BY 01 - xwt",
+        "🇧🇾 BY 02 - xwt",
+        "🇧🇾 BY 03 - xwt",
+        "🇧🇾 BY 04 - xwt",
+        "🇧🇾 BY 05 - xwt",
+        "🇧🇾 BY 06 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 LT 01 - xwt"
+        "🇧🇾 BY 01 - xwt",
+        "🇧🇾 BY 02 - xwt",
+        "🇧🇾 BY 03 - xwt",
+        "🇧🇾 BY 04 - xwt",
+        "🇧🇾 BY 05 - xwt",
+        "🇧🇾 BY 06 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },
