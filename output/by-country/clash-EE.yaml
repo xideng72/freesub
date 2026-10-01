@@ -6,14 +6,47 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - xwt
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.246
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 02 - xwt
+  type: vless
+  server: ee10.zazazuza.ru
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 03 - xwt
+  type: vless
+  server: 194.26.141.148
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 04 - xwt
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -29,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - xwt
   - 🇪🇪 EE 02 - xwt
+  - 🇪🇪 EE 03 - xwt
+  - 🇪🇪 EE 04 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - xwt
   - 🇪🇪 EE 02 - xwt
+  - 🇪🇪 EE 03 - xwt
+  - 🇪🇪 EE 04 - xwt
 rules:
 - MATCH,PROXIES

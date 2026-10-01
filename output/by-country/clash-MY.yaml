@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xwt
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 02 - xwt
   type: vmess
   server: 47.250.135.244
@@ -28,120 +25,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇲🇾 MY 03 - xwt
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 04 - xwt
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 MY 05 - xwt
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 06 - xwt
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 07 - xwt
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇲🇾 MY 08 - xwt
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 09 - xwt
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 10 - xwt
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 11 - xwt
-  type: vless
-  server: platform107.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇲🇾 MY 12 - xwt
   type: ss
   server: 130.94.69.15
   port: 7001
@@ -156,15 +39,6 @@ proxy-groups:
   - 🇲🇾 MY 01 - xwt
   - 🇲🇾 MY 02 - xwt
   - 🇲🇾 MY 03 - xwt
-  - 🇲🇾 MY 04 - xwt
-  - 🇲🇾 MY 05 - xwt
-  - 🇲🇾 MY 06 - xwt
-  - 🇲🇾 MY 07 - xwt
-  - 🇲🇾 MY 08 - xwt
-  - 🇲🇾 MY 09 - xwt
-  - 🇲🇾 MY 10 - xwt
-  - 🇲🇾 MY 11 - xwt
-  - 🇲🇾 MY 12 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -173,14 +47,5 @@ proxy-groups:
   - 🇲🇾 MY 01 - xwt
   - 🇲🇾 MY 02 - xwt
   - 🇲🇾 MY 03 - xwt
-  - 🇲🇾 MY 04 - xwt
-  - 🇲🇾 MY 05 - xwt
-  - 🇲🇾 MY 06 - xwt
-  - 🇲🇾 MY 07 - xwt
-  - 🇲🇾 MY 08 - xwt
-  - 🇲🇾 MY 09 - xwt
-  - 🇲🇾 MY 10 - xwt
-  - 🇲🇾 MY 11 - xwt
-  - 🇲🇾 MY 12 - xwt
 rules:
 - MATCH,PROXIES
