@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - xwt
   type: vless
   server: 194.61.31.126
@@ -27,15 +27,8 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - xwt
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇮🇳 印度 (India) 04 - xwt
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -46,7 +39,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +48,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xwt
   - 🇮🇳 印度 (India) 02 - xwt
   - 🇮🇳 印度 (India) 03 - xwt
-  - 🇮🇳 印度 (India) 04 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +56,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xwt
   - 🇮🇳 印度 (India) 02 - xwt
   - 🇮🇳 印度 (India) 03 - xwt
-  - 🇮🇳 印度 (India) 04 - xwt
 rules:
 - MATCH,PROXIES

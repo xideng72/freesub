@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01 - xwt
+- name: 🇨🇴 CO 01 - xwt
   type: ss
-  server: 45.207.207.25
-  port: 443
+  server: 149.104.107.41
+  port: 8090
   cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+  password: PCnnH6SQSnfoS27
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01 - xwt
+  - 🇨🇴 CO 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01 - xwt
+  - 🇨🇴 CO 01 - xwt
 rules:
 - MATCH,PROXIES
