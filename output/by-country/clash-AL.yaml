@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - xwt
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇦🇱 AL 01 - xwt
+  type: vless
+  server: lv1.rovilo.ir
+  port: 2095
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - xwt
+  - 🇦🇱 AL 01 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - xwt
+  - 🇦🇱 AL 01 - xwt
 rules:
 - MATCH,PROXIES

@@ -29,19 +29,6 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: m.zoom.us
-- name: 🇱🇰 LK 03 - xwt
-  type: vless
-  server: cdn.zoom.us
-  port: 80
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
       Host: cloud.ghostdev.lk
 proxy-groups:
 - name: PROXIES
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇰 LK 01 - xwt
   - 🇱🇰 LK 02 - xwt
-  - 🇱🇰 LK 03 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇰 LK 01 - xwt
   - 🇱🇰 LK 02 - xwt
-  - 🇱🇰 LK 03 - xwt
 rules:
 - MATCH,PROXIES
