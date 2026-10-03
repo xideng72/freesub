@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇬 KG 01 - xwt",
-        "🇰🇬 KG 02 - xwt",
-        "🇰🇬 KG 03 - xwt",
-        "🇰🇬 KG 04 - xwt",
-        "🇰🇬 KG 05 - xwt",
-        "🇰🇬 KG 06 - xwt"
+        "🇷🇴 RO 01 - xwt"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇬 KG 01 - xwt",
-        "🇰🇬 KG 02 - xwt",
-        "🇰🇬 KG 03 - xwt",
-        "🇰🇬 KG 04 - xwt",
-        "🇰🇬 KG 05 - xwt",
-        "🇰🇬 KG 06 - xwt"
+        "🇷🇴 RO 01 - xwt"
       ],
       "url": "https://www.google.com/generate_204"
     },

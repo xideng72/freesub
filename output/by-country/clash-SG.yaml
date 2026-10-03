@@ -5,25 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.19.178.244
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 02 - xwt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 03 - xwt
   type: vmess
   server: 149.88.23.202
@@ -36,80 +42,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 04 - xwt
   type: vless
-  server: 5.223.41.121
-  port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 05 - xwt
-  type: vless
-  server: 5.223.41.121
-  port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 06 - xwt
-  type: vless
-  server: sg.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 07 - xwt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - xwt
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 09 - xwt
-  type: vless
-  server: 172.65.90.53
-  port: 8880
-  uuid: 121c3728-2b6b-4b69-bac6-170b13658d74
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: falling-darkness-95ea.289.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 10 - xwt
-  type: vless
   server: 217.217.254.126
   port: 2053
   uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
@@ -120,7 +52,7 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 11 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 05 - xwt
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -130,7 +62,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 12 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 06 - xwt
   type: vless
   server: 5.223.41.179
   port: 80
@@ -143,11 +75,44 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 13 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 07 - xwt
   type: vless
-  server: 104.16.10.199
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 08 - xwt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 09 - xwt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 - xwt
+  type: vless
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
   tls: true
   skip-cert-verify: true
@@ -157,9 +122,55 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 11 - xwt
+  type: vless
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 12 - xwt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 13 - xwt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 14 - xwt
   type: vless
-  server: 104.16.10.10
+  server: 5.223.41.125
+  port: 80
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.125
+- name: 🇸🇬 新加坡 (Singapore) 15 - xwt
+  type: vless
+  server: 104.16.10.235
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -171,27 +182,16 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 15 - xwt
-  type: ss
-  server: 45.128.12.20
-  port: 14249
-  cipher: chacha20-ietf-poly1305
-  password: 9epp3o9ng8ej59uv
-  udp: true
 - name: 🇸🇬 新加坡 (Singapore) 16 - xwt
-  type: vless
-  server: 172.67.215.39
-  port: 443
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 17 - xwt
   type: vmess
   server: 149.88.23.207
@@ -203,21 +203,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 18 - xwt
-  type: vless
-  server: 5.223.41.179
-  port: 80
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.179
 - name: 🇸🇬 新加坡 (Singapore) 19 - xwt
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -226,6 +223,26 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 20 - xwt
+  type: ss
+  server: 139.180.220.175
+  port: 8388
+  cipher: aes-256-gcm
+  password: qpSevKaUXYQKvSjp
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - xwt
+  type: vless
+  server: 5.223.41.164
+  port: 80
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 22 - xwt
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -235,73 +252,36 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - xwt
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 22 - xwt
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: billowing-fire-a10b.301-d6c.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: billowing-fire-a10b.301-d6c.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 23 - xwt
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
 - name: 🇸🇬 新加坡 (Singapore) 24 - xwt
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 25 - xwt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 26 - xwt
   type: vmess
   server: ww11.levikogjgfdd.ir
@@ -313,15 +293,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 27 - xwt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.121
 - name: 🇸🇬 新加坡 (Singapore) 28 - xwt
   type: vless
   server: 5.223.41.179
@@ -337,21 +320,9 @@ proxies:
       Host: 5.223.41.179
 - name: 🇸🇬 新加坡 (Singapore) 29 - xwt
   type: vless
-  server: 103.106.229.236
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 30 - xwt
-  type: vless
-  server: 5.223.41.93
+  server: 170.114.45.6
   port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
   tls: false
   skip-cert-verify: true
@@ -359,10 +330,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 31 - xwt
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 30 - xwt
   type: vless
-  server: 104.21.5.75
+  server: 104.16.10.199
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -374,20 +345,49 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 32 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 31 - xwt
   type: vless
-  server: 5.223.41.51
-  port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 32 - xwt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.51
 - name: 🇸🇬 新加坡 (Singapore) 33 - xwt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 34 - xwt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 35 - xwt
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -399,54 +399,7 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 34 - xwt
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 36 - xwt
-  type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 37 - xwt
-  type: vless
-  server: 104.16.10.235
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: u.srilankangrill.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 38 - xwt
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -458,32 +411,7 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 39 - xwt
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 40 - xwt
-  type: vless
-  server: 103.106.229.236
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 41 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 37 - xwt
   type: vless
   server: 5.223.41.125
   port: 80
@@ -496,7 +424,33 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 42 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 38 - xwt
+  type: vless
+  server: 5.223.41.164
+  port: 80
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 39 - xwt
+  type: vless
+  server: 5.223.41.125
+  port: 80
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.125
+- name: 🇸🇬 新加坡 (Singapore) 40 - xwt
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -506,9 +460,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 41 - xwt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 42 - xwt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 43 - xwt
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -518,7 +496,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 44 - xwt
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -528,182 +506,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 45 - xwt
   type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 46 - xwt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 47 - xwt
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 48 - xwt
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 49 - xwt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 50 - xwt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 51 - xwt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 52 - xwt
-  type: vless
-  server: sg.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 53 - xwt
-  type: vless
-  server: sg.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 54 - xwt
-  type: vless
-  server: 103.106.229.236
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 55 - xwt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 56 - xwt
-  type: vless
-  server: 5.223.41.51
-  port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 57 - xwt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 58 - xwt
-  type: vless
-  server: 5.223.41.121
-  port: 80
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 59 - xwt
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 60 - xwt
-  type: vmess
   server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -712,44 +514,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 61 - xwt
-  type: vless
-  server: 5.223.41.125
-  port: 80
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 62 - xwt
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  network: ws
-  ws-opts:
-    path: /138.2.74.219-28616
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 63 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 64 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 46 - xwt
   type: vless
   server: 141.193.213.20
   port: 8443
@@ -763,43 +528,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 65 - xwt
-  type: vless
-  server: 104.18.0.181
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 66 - xwt
-  type: vless
-  server: 5.223.41.51
-  port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 67 - xwt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 68 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 47 - xwt
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -809,20 +538,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 69 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 48 - xwt
   type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 70 - xwt
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 49 - xwt
   type: vless
   server: 5.223.41.121
   port: 80
@@ -835,11 +563,11 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.121
-- name: 🇸🇬 新加坡 (Singapore) 71 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 50 - xwt
   type: vless
-  server: 104.16.156.227
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  server: 141.193.213.20
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
   tls: true
   skip-cert-verify: true
@@ -849,7 +577,43 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 72 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 51 - xwt
+  type: vless
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 52 - xwt
+  type: vless
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 53 - xwt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 54 - xwt
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -861,11 +625,43 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 73 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 55 - xwt
   type: vless
-  server: 5.223.41.51
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 56 - xwt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 57 - xwt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 58 - xwt
+  type: vless
+  server: 5.223.41.125
   port: 80
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
   udp: true
   tls: false
   skip-cert-verify: true
@@ -873,8 +669,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 74 - xwt
+      Host: 5.223.41.125
+- name: 🇸🇬 新加坡 (Singapore) 59 - xwt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 60 - xwt
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -884,17 +690,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 75 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 61 - xwt
+  type: vless
+  server: 104.16.10.191
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 76 - xwt
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 62 - xwt
   type: vless
   server: 104.16.10.234
   port: 443
@@ -908,35 +718,95 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 77 - xwt
+- name: 🇸🇬 新加坡 (Singapore) 63 - xwt
   type: vless
-  server: 27.50.49.154
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: proxy-34l.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 78 - xwt
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 64 - xwt
   type: vless
-  server: 103.106.229.236
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 65 - xwt
+  type: vless
+  server: free-server.techsonic.dev
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 79 - xwt
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 66 - xwt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 67 - xwt
   type: vless
-  server: 104.19.178.244
+  server: 5.223.41.51
+  port: 80
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.51
+- name: 🇸🇬 新加坡 (Singapore) 68 - xwt
+  type: vless
+  server: 5.223.41.164
+  port: 80
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 69 - xwt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 70 - xwt
+  type: vless
+  server: 104.16.156.227
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -948,9 +818,119 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 71 - xwt
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 72 - xwt
+  type: vless
+  server: 5.223.41.51
+  port: 80
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.51
+- name: 🇸🇬 新加坡 (Singapore) 73 - xwt
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 74 - xwt
+  type: vless
+  server: 104.16.10.10
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 75 - xwt
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 76 - xwt
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 77 - xwt
+  type: vless
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 78 - xwt
+  type: vless
+  server: 104.21.5.75
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 79 - xwt
+  type: vless
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 80 - xwt
   type: vless
-  server: 104.16.10.233
+  server: 104.16.10.199
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
@@ -964,9 +944,9 @@ proxies:
       Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 81 - xwt
   type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  server: 104.16.10.233
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
   tls: true
   skip-cert-verify: true
@@ -987,75 +967,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 83 - xwt
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
 - name: 🇸🇬 新加坡 (Singapore) 84 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 85 - xwt
-  type: vless
-  server: 5.223.41.125
-  port: 80
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 86 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 87 - xwt
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 88 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 89 - xwt
   type: vless
   server: 5.223.41.93
   port: 80
@@ -1068,76 +989,6 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 90 - xwt
-  type: vless
-  server: 27.50.49.154
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: proxy-34l.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 91 - xwt
-  type: vless
-  server: sg.monkora.org
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 92 - xwt
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 93 - xwt
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 94 - xwt
-  type: vless
-  server: 103.106.229.236
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 95 - xwt
-  type: vless
-  server: 103.106.229.236
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: sg.monkora.org
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1227,17 +1078,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 82 - xwt
   - 🇸🇬 新加坡 (Singapore) 83 - xwt
   - 🇸🇬 新加坡 (Singapore) 84 - xwt
-  - 🇸🇬 新加坡 (Singapore) 85 - xwt
-  - 🇸🇬 新加坡 (Singapore) 86 - xwt
-  - 🇸🇬 新加坡 (Singapore) 87 - xwt
-  - 🇸🇬 新加坡 (Singapore) 88 - xwt
-  - 🇸🇬 新加坡 (Singapore) 89 - xwt
-  - 🇸🇬 新加坡 (Singapore) 90 - xwt
-  - 🇸🇬 新加坡 (Singapore) 91 - xwt
-  - 🇸🇬 新加坡 (Singapore) 92 - xwt
-  - 🇸🇬 新加坡 (Singapore) 93 - xwt
-  - 🇸🇬 新加坡 (Singapore) 94 - xwt
-  - 🇸🇬 新加坡 (Singapore) 95 - xwt
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1327,16 +1167,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 82 - xwt
   - 🇸🇬 新加坡 (Singapore) 83 - xwt
   - 🇸🇬 新加坡 (Singapore) 84 - xwt
-  - 🇸🇬 新加坡 (Singapore) 85 - xwt
-  - 🇸🇬 新加坡 (Singapore) 86 - xwt
-  - 🇸🇬 新加坡 (Singapore) 87 - xwt
-  - 🇸🇬 新加坡 (Singapore) 88 - xwt
-  - 🇸🇬 新加坡 (Singapore) 89 - xwt
-  - 🇸🇬 新加坡 (Singapore) 90 - xwt
-  - 🇸🇬 新加坡 (Singapore) 91 - xwt
-  - 🇸🇬 新加坡 (Singapore) 92 - xwt
-  - 🇸🇬 新加坡 (Singapore) 93 - xwt
-  - 🇸🇬 新加坡 (Singapore) 94 - xwt
-  - 🇸🇬 新加坡 (Singapore) 95 - xwt
 rules:
 - MATCH,PROXIES
